@@ -51,7 +51,7 @@ npm install
 
 1. Set Up Accounts
     ```bash
-   nano data.txt
+   nano tokens.txt
    ```
    - Now Add one NodeGo access token per line
    - Example:
