@@ -19,14 +19,27 @@ An automated bot for completing Walme airdrop tasks with comprehensive proxy sup
 ## Requirements
 
 - Node.js (v16 or higher)
-- NPM or Yarn package manager
+- npm (Node Package Manager)
+  
+# How to Get Your Access Token
+
+1. Open your browser and login to the Walme dashboard.
+2. Press `F12` to open the **Inspect Elements** panel.
+3. Go to the **Console** tab and paste the following code:
+
+   ```javascript
+   localStorage.getItem('accessToken')
+   ```
+
+4. You will receive your user ID, which looks like this: `"eyjxxxx........"`
+5. If you can't paste, type allow pasting and press Enter, then paste the line above.
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/airdropinsiders/Walme-Auto-Bot.git
-cd Walme-Auto-Bot
+git clone https://github.com/Not-D4rkCipherX/Walme.git
+cd Walme
 ```
 
 2. Install dependencies:
@@ -34,33 +47,37 @@ cd Walme-Auto-Bot
 npm install
 ```
 
-3. Create configuration files:
+## Configuration
 
-Create a `tokens.txt` file in the root directory with one token per line:
-```
-yourToken1
-yourToken2
-```
+1. Set Up Accounts
+    ```bash
+   nano data.txt
+   ```
+   - Now Add one NodeGo access token per line
+   - Example:
+     ```
+     token1
+     token2
+     token3
+     ```
 
-For proxy support, create a `proxies.txt` file with one proxy per line:
+3. (Optional) Proxy
+ ```bash
+nano proxies.txt
 ```
-http://username:password@host:port
-socks5://username:password@host:port
-host:port
-username:password@host:port
-host:port:username:password
-```
-
+   - Add one proxy per line
+   - Supports both HTTP and SOCKS proxies
+   - Example:
+     ```
+     http://ip1:port1
+     socks5://ip2:port2
+     socks4://ip3:port3
+     ```
 ## Usage
 
-### How to get tokens?
-- F12 on dashboard
-- Go to Local Storage
-- Copy Access Token
-
-Start the bot with:
+Run the bot:
 ```bash
-npm start
+node index.js
 ```
 
 The bot will:
@@ -88,15 +105,7 @@ If you encounter issues:
 - Check that your proxies are working and properly formatted in proxies.txt
 - Verify that you have installed all required dependencies
 - Check the console for detailed error messages
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
+  
 ## Disclaimer
 
 This tool is for educational purposes only. Use at your own risk. The developers are not responsible for any account actions resulting from the use of this bot.
-
-## Repository
-
-https://github.com/airdropinsiders/Walme-Auto-Bot.git
