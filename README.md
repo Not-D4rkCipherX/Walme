@@ -53,7 +53,7 @@ npm install
     ```bash
    nano tokens.txt
    ```
-   - Now Add one NodeGo access token per line
+   - Now Add one Your access token per line
    - Example:
      ```
      token1
