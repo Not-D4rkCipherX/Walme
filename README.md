@@ -4,7 +4,7 @@ An automated bot for completing Walme airdrop tasks with comprehensive proxy sup
 
 ## Register
 
-- https://waitlist.walme.io/?inv=TZO8Z4
+- https://waitlist.walme.io?inv=AWILZZ
 
 ## Features
 
